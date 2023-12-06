@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    height: 100%;
+    background: #006465;
+}
+
+.sidebar button{
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+.sidebar{
+    z-index: 2;
+    position: fixed;
+    width: 50px;
+    height: 100vh;
+    background: #fff;
+    overflow: hidden;
+    transition: 0.5s;
+
+}
+
+.sidebar:hover{
+    width: 400px;
+    z-index: 3;
+}
+
+.sidebar ul{
+    position: relative;
+    height: 100vh;
+}
+
+.sidebar ul li{
+    list-style: none;
+}
+
+.sidebar ul li:hover{
+    background: #f3f3f3;
+}
+
+.sidebar ul li a{
+    position: relative;
+    display: flex;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.sidebar ul li a .icon{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 60px;
+    height: 60px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.sidebar ul li a .text{ 
+    position: relative;
+    display: flex;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Style para a pagina de login*/
+
+.main-login{
+    width: 100vw;
+    height: 100vh;
+    padding-left: 50px;
+    background: #201b2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mensage-login{
+    width: 40vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 100px;
+}
+
+.mensage-login h1{
+    color: #77ffc0;
+}
+
+.input-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login{
+    width: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.card-login h1{
+    color: #00ff88;
+    font-weight: 800;
+    margin: 0;
+}
+
+.textfield{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.textfield input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #514869;
+    color: #f0ffffde;
+    font-size: 12pt;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield label{
+    
+    color: #f0ffffde;
+    margin-bottom: 10px;
+}
+
+.textfield input::placeholder{
+    color: #f0ffff94;
+}
+
+.btn{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px 0px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #2b134b;
+    background: #00ff88;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00ff8052;
+}
+
+.login-img{
+    width: 30vw;
+}
+
+/*Style do cadastrar produto*/
+.main-produto {
+    width: 100vw;
+    height: 100vh;
+    background: #201b2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-produto{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.card-produto h1{
+    color: #00ff88;
+    font-weight: 800;
+    margin: 0;
+}
+
+/*Style do cadastrar fornecedor*/
+.main-fornecedor {
+    width: 100vw;
+    height: 100vh;
+    background: #201b2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-fornecedor{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.card-fornecedor h1{
+    color: #00ff88;
+    font-weight: 800;
+    margin: 0;
+}
+
+/*Style do cadastrar categoria*/
+.main-categoria {
+    width: 100vw;
+    height: 100vh;
+    background: #201b2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-relatorio {
+    width: 100vw;
+    height: 100vh;
+    background: #201b2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.description {
+    display: grid;
+    float: left;
+    padding: 0.2em;
+    color: #f0ffffde;
+    margin-bottom: 10px;
+}
+textarea {
+    border-radius: 5px;
+    background: #514869;
+    border: #514869;
+   
+}
+/*Style para o inicio*/
+
+.mensage-login-img{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mensage-login{
+    width: 40vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 100px;
+}
+
+.mensage-inicio h1{
+    text-align: center;
+    font-size: 25pt;
+    color: #77ffc0;
+    z-index: 1;
+}
+@media screen and (max-width: 768px){
+    .sidebar:hover{
+        width: 200px;
+        z-index: 2;
+    }
+    .sidebar ul li a .icon{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 60px;
+        height: 60px;
+        font-size: 1em;
+        color: #333;
+    }
+    
+    .sidebar ul li a .text{ 
+        position: relative;
+        display: flex;
+        height: 60px;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.5em;
+        color: #333;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+    }
+    
+}
+
+@media screen and (max-width: 1020px){
+    .main-login{
+        flex-direction: column;
+    }
+    .login-img{
+        width: 15em;
+        
+    }
+    .mensage-inicio h1{
+        font-size: 20pt ;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1{
+        font-size: 18px;
+    }
+    .card-produto{
+        width: 40vh;
+    }
+    form{
+        width: 100%;
+        height: 75vh;
+        font-size: 17px;
+    }
+    
+    input{
+        height: 35px;
+    }
+    .btn{
+        height: 20px;
+        font-size: 12px;
+        margin: 5px 0px;
+        padding-bottom: 30px;
+    }
+
+
+}
+
+/* Adaptação para tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #514869;
+    padding: 10px;
+    text-align: left;
+    color: #f0ffffde;
+}
+
+th {
+    background-color: #2f2841;
+    color: #00ff88;
+}
+
+tbody tr:hover {
+    background-color: #f3f3f3;
+}
+
+/* Adicione estilos para a tabela */
+.table-container {
+    width: 100%;
+    margin-top: 20px;
+    overflow-x: auto; /* Adiciona barra de rolagem horizontal se necessário */
+
+    /* Adicione outros estilos da classe .page conforme necessário */
+    background: #201b2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px; /* Ajuste conforme necessário */
+}
+
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-container th, .table-container td {
+    border: 1px solid #514869;
+    padding: 10px;
+    text-align: left;
+    color: #f0ffffde;
+}
+
+.table-container th {
+    background-color: #2f2841;
+    color: #00ff88;
+}
+
+.table-container tbody tr:hover {
+    background-color: #f3f3f3;
+}
